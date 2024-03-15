@@ -18,7 +18,7 @@
 
 /* nav */
 li a.active {
-    color: rgb(0, 110, 255) !important;
+    color: darkblue !important;
 }
 
 #toggler {
@@ -480,7 +480,7 @@ i#next {
 @media (max-width: 767px) {
     .col-md-4 {
         text-align: center;
-        margin-left: -20px;
+       
     }
 
     #Ph {
@@ -488,18 +488,20 @@ i#next {
         text-align: center;
 
     }
-
+    .pSec2{
+        margin-top: 3rem;
+    }
     /* cart */
     #row {
         width: 490px;
         margin-left: 13px;
     }
 
-    #cart {
+    /* #cart {
         text-align: center;
         margin-left: 20px;
         width: 100%;
-    }
+    } */
 
     #cart-btn {
         width: fit-content;
@@ -526,4 +528,326 @@ i#next {
     #h2 {
         font-size: 25px;
     }
+}
+
+
+
+@media (max-width: 767px) {
+    #TheBG {
+      text-align: center;
+    }
+
+    #cart .col-md-4 {
+      margin-bottom: 20px;
+      text-align: start;
+    }
+
+  }
+  .card-index {
+  border-radius: 20px 0px 20px 0px;
+  border: 1px solid #eaebec;
+  height: auto;
+  width: 100%;
+  padding: 15px;
+  box-shadow: lightgray ;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Small shadow on bottom and left */
+  
+
+}
+
+.card-index h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px; /* Add some space below the heading */
+}
+
+.card-inside {
+  height: 70px;
+  border-radius: 15px;
+  background-color: #f6f6f7; /* Gray background color */
+}
+
+.card-inside img {
+  width: 60%;
+  z-index: 2;
+}
+
+.container-fluid.row {
+  margin: 10px; /* Add some space above the row */
+  width: fit-content;
+}
+
+.container-fluid.row .col-4 {
+  text-align: center; /* Center the content */
+}
+
+.btn-card{
+  color: darkblue; /* White text color */
+  border: solid darkblue 2px; /* Remove default button border */
+  border-radius: 5px; /* Add some border radius */
+  padding: 10px 20px; /* Add padding */
+  margin-top: 15px; /* Add some space above the button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+.btn-card a{
+    color: darkblue; /* White text color */
+    
+  }
+  .btn-card2{
+    background-color: white;
+    color: darkblue; /* White text color */
+    border: solid darkblue 2px; /* Remove default button border */
+    border-radius: 5px; /* Add some border radius */
+    padding: 10px 20px; /* Add padding */
+    margin-top: 15px; /* Add some space above the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+
+.card-inside {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.card-index {
+  position: relative;
+}
+
+
+
+.card-img {
+transition: transform 0.3s ease; /* Transition for the transform property */
+}
+.card-index:hover .card-img{
+transform: translateX(5px); /* Move the image horizontally by -10px */
+}
+.card-index:hover .btn-card:hover {
+  background-color: darkblue;
+}
+
+
+@keyframes gradientAnimation {
+  0% {
+      background-position: 100% 0;
+  }
+  100% {
+      background-position: 0 0;
+  }
+}
+
+.card-inside,
+.btn-card {
+transition: background 1s ease, color 1s ease; /* Transitions for background and color */
+}
+
+.card-img {
+transition: transform 1s ease; /* Transition for the transform property */
+}
+
+.card-index.hovered {
+    background:rgba(211, 211, 211, 0.548); /* Change background color on hover */
+    }
+    
+.card-index.hovered .card-inside {
+background: darkblue; /* Change background color on hover */
+color: white; /* Change text color on hover */
+}
+
+.card-index.hovered .btn-card {
+background: darkblue; /* Change background color on hover */
+color: white; /* Change text color on hover */
+}
+.card-index.hovered .btn-card2 {
+background: gray; /* Change background color on hover */
+border: gray solid 2px;
+color: white; /* Change text color on hover */
+}
+.card-index.hovered .btn-card a{
+color: white; /* Change text color on hover */
+}
+
+.card-index.hovered .card-img {
+transform: translateX(5px); /* Move the image horizontally by 5px on hover */
+}
+
+.card-index .card-inside{
+background: rgb(218, 217, 217); /* Initial background color */
+color: darkblue; /* Initial text color */
+}
+.card-index .btn-card {
+background: white; /* Initial background color */
+color: darkblue; /* Initial text color */
+}
+
+.card-index .card-img {
+transform: translateX(0); /* Reset image position */
+}
+
+
+.card-index {
+    perspective: 1000px;
+    height: 60vh;
+  }
+  
+  .card-content {
+    position: absolute;
+    width: 94%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+  }
+  
+  .front {
+    z-index: 2;
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+  }
+  
+  .card-index.flip .front {
+    transform: rotateY(180deg);
+  }
+  
+  .card-index.flip .back {
+    transform: rotateY(0deg);
+  }
+  
+  
+  .height-100{
+      height:70%;
+  }
+  
+  .card{
+      width:380px;
+      border:none;
+      height:280px;
+  }
+  
+  .ratings{
+      margin-right:10px;
+  }
+  
+  .ratings i{
+      
+      color:#cecece;
+      font-size:32px;
+  }
+  
+  .rating-color{
+      color:#fbc634 !important;
+  }
+  
+  .review-count{
+      font-weight:400;
+      margin-bottom:2px;
+      font-size:24px !important;
+  }
+  
+  .small-ratings i{
+    color:#cecece;   
+  }
+  
+  .review-stat{
+      font-weight:300;
+      font-size:18px;
+      margin-bottom:2px;
+  }
+
+
+.car-features {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 35px 0 ;
+  padding: 15 0px;
+  box-sizing: border-box;
+}
+
+
+.car-features li {
+  margin: 0; /* Remove default margin */
+  list-style: none;
+  font-size: 14px;
+  padding-left: 0;
+  padding-right: 0;
+  
+}
+
+.car-features li img{
+width: 15px;
+filter: invert(48%) sepia(92%) saturate(2858%) hue-rotate(191deg) brightness(96%) contrast(85%);
+
+}
+
+ul{
+    padding-inline-start: 20px;
+}
+
+
+
+.navbar-light .navbar-nav .nav-link {
+    margin-right: 30px;
+    padding: 25px 0;
+    color: #FFFFFF;
+    font-size: 15px;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: darkblue;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-light .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+.navbar-light .navbar-brand,
+.navbar-light a.btn {
+    height: 75px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: darkblue;
+    font-weight: 500;
+}
+
+.navbar-light.sticky-top {
+    top: -100px;
+    transition: .5s;
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+}
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  #navbarCollapse {
+    justify-content: flex-end;
+  }
+.hidden{
+    opacity: 0;
+    transition: all 2s ease;
+}
+.show{
+    opacity: 1;
 }

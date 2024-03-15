@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
     <title>Galaxie Drive</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
@@ -11,12 +12,18 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
     <script src="./assets/css/bootstrap.min.js"></script>
+    <link href="assets/OwlCarroussel/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/OwlCarroussel/animate/animate.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="slide.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <style>
+        .text-gray-300 {
+            font-size: 14px;
+        }
+
         /* Reset some default brow my-5 py-5ser styles */
         body,
         h1,
@@ -54,11 +61,11 @@
         }
 
         .featured-image {
-           
+
             height: auto;
         }
 
-        
+
         .featured-title {
             font-size: 24px;
             font-weight: bold;
@@ -181,53 +188,76 @@
             #copyright {
                 text-align: center;
             }
+
             .footerh2 {
                 font-size: 25px;
                 padding: 5px;
             }
         }
-        p{
+
+        p {
             font-size: 1.2em;
         }
-    </style>
-</head>
 
-<body>
+
+
+        /* Responsive styles for smaller screens (mobile) */
+        @media (max-width: 767px) {
+            .testimonial-item {
+                display: block;
+                width: 100%;
+            }
+        }
+        @media (max-width: 767px) {
+        #divNav {
+          display: block;
+        }
+      }
+  
+      #divNav {
+        display: block;
+      }
+  
+      @media (min-width: 768px) {
+        #divNav {
+          display: none;
+        }
+      }
+    </style>
+  
+  </head>
+  
+  <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only"></span>
         </div>
     </div>
     <!-- Spinner End -->
-<nav class="navbar navbar-expand-md bg-light navbar-light  header-area header-sticky">
-        <div class="container-fluid">
-            <a class="navbar-brand " href="" style="font-size:1.7em ">
-                <!-- Logo -->
-                <img src="./assets/images/logo.png" alt="" class="px-5 w-50">
-                <!-- Logo -->
-            </a>
-            <button type="button" class="navbar-toggler justify-content-end" data-toggle="collapse"
-                data-target="#thetarget" id="toggler">
-                <span class="navbar-toggler-icon "></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end p-3" id="thetarget">
-                <ul class="navbar-nav ">
-                    <li class="nav-item mx-3 p-2"><a class="nav-link hoverBlue " href="Accueil.html">Accueil</a></li>
-                    <li class="nav-item mx-3 p-2"><a class="nav-link hoverBlue active" href="NosVhicules.html">Nos
-                            Véhicules</a></li>
-                    <li class="nav-item mx-3 p-2"><a class="nav-link hoverBlue" href="Apropos.html">A Propos</a></li>
-                    <li class="nav-item mx-3 HoverBtnBlue p-2"><a class="nav-link hoverBlue  "
-                            href="Contact.html">Réservation</a>
-                    </li>
-                </ul>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0 ">
+        <a class="navbar-brand col-auto" href="" style="font-size: 1.7em">
+          <!-- Logo -->
+          <img src="./assets/images/logo.png" alt="" class="px-2 w-50">
+          <!-- Logo -->
+        </a>
+        <button type="button" class="navbar-toggler mr-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Accueil</a>
+                <a href="NosVhicules.html" class="nav-item nav-link">Nos Véhicules</a>
+                <a href="Apropos.html" class="nav-item nav-link active">A Propos</a>
             </div>
+            <a href="Contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Résérvation &nbsp;<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
-    </nav>
+      </nav>
     <main>
         <div class="container">
             <div class="row my-5 py-5">
-                <div class="col-md-6 py-5">                    
+                <div class="col-md-6 py-5">
                     <h3>A Propos De Nous</h3>
                     <br>
                     <p>Praesent nunc nunc, egestas eget elementum sed; rutrum eget metus! Vestibulum congue congue dui
@@ -247,13 +277,13 @@
                     <img src="./assets/images/bg_second.jpeg" alt="" style="width: 100%; height: fit-content;">
                 </div>
             </div>
-           
+
         </div>
         <div class="container-fluid text-white" style="background-color: grey;">
             <div class="container" style="background-color: grey;">
                 <div class="row  py-5 my-5">
                     <div class="col-md-5 py-5">
-                        <img src="assets/images/bg_first.jpg" alt=""  class="w-100">
+                        <img src="assets/images/bg_first.jpg" alt="" class="w-100">
                     </div>
                     <div class="col-md-7 py-5">
                         <h3>Notre Parcours En Location De Voiture</h3>
@@ -280,13 +310,17 @@
                     <br>
                     <img src="assets/images/page2_pic9-10.jpg" alt="" width="100%"><br>
                     <br>
-                    <img src="assets/icons/check.png" alt="">&nbsp;Chez Galaxie Drive, nous vous assurons des véhicules impeccables pour une expérience
+                    <img src="assets/icons/check.png" alt="">&nbsp;Chez Galaxie Drive, nous vous assurons des véhicules
+                    impeccables pour une expérience
                     de conduite fiable et sécurisée. <br>
-                    <img src="assets/icons/check.png" alt="">&nbsp;Votre satisfaction est notre priorité. Nous offrons un service personnalisé pour
+                    <img src="assets/icons/check.png" alt="">&nbsp;Votre satisfaction est notre priorité. Nous offrons
+                    un service personnalisé pour
                     répondre à tous vos besoins de location. <br>
-                    <img src="assets/icons/check.png" alt="">&nbsp;Simplifiez vos déplacements avec notre flotte moderne. Galaxie Drive rend chaque
+                    <img src="assets/icons/check.png" alt="">&nbsp;Simplifiez vos déplacements avec notre flotte
+                    moderne. Galaxie Drive rend chaque
                     trajet agréable et sans tracas. <br>
-                    <img src="assets/icons/check.png" alt="">&nbsp;L'intégrité guide nos actions. Louez avec nous pour une expérience transparente et de
+                    <img src="assets/icons/check.png" alt="">&nbsp;L'intégrité guide nos actions. Louez avec nous pour
+                    une expérience transparente et de
                     confiance. <br>
                 </div>
                 <div class="col-md-6 py-5">
@@ -306,12 +340,75 @@
                 </div>
             </div>
         </div>
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="mb-5">Nos Clients Disent :</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel position-relative">
+                    <!-- Testimonial Item 1 -->
+                    <div class="testimonial-item text-center">
+                        <img class="border rounded-circle p-2 mx-auto mb-3" src="assets/images/testimonial-1.jpg"
+                            style="width: 80px; height: 80px;">
+                        <h5 class="mb-0">Karima Alami</h5>
+                        <br>
+                        <div class="testimonial-text bg-light text-center p-4">
+                            <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam
+                                et
+                                eos. Clita erat ipsum et lorem et sit.</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Item 2 -->
+                    <div class="testimonial-item text-center">
+                        <img class="border rounded-circle p-2 mx-auto mb-3" src="assets/images/testimonial-2.jpg"
+                            style="width: 80px; height: 80px;">
+                        <h5 class="mb-0">Ahmed Sebai</h5>
+                        <br>
+                        <div class="testimonial-text bg-light text-center p-4">
+                            <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam
+                                et
+                                eos. Clita erat ipsum et lorem et sit.</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Item 3 -->
+                    <div class="testimonial-item text-center">
+                        <img class="border rounded-circle p-2 mx-auto mb-3" src="assets/images/testimonial-3.jpg"
+                            style="width: 80px; height: 80px;">
+                        <h5 class="mb-0">Hamza Belhaj</h5>
+                        <br>
+                        <div class="testimonial-text bg-light text-center p-4">
+                            <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam
+                                et
+                                eos. Clita erat ipsum et lorem et sit.</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Item 4 -->
+                    <div class="testimonial-item text-center">
+                        <img class="border rounded-circle p-2 mx-auto mb-3" src="assets/images/testimonial-4.jpg"
+                            style="width: 80px; height: 80px;">
+                        <h5 class="mb-0">Laila El Kassimi</h5>
+                        <br>
+                        <div class="testimonial-text bg-light text-center p-4">
+                            <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam
+                                et
+                                eos. Clita erat ipsum et lorem et sit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
     </main>
     <!-- Footer -->
     <div class="conntainer-fluid bg-light py-3">
         <center>
             <div class="col-md-6 bg-white py-3 " style="border-radius: 15px; height: 150px;">
-                <h2 class="footerh2">CONSULTEZ NOS RESEAUX SOCIAUX</h2>
+                <h2 class="footerh2 my-2">CONSULTEZ NOS RESEAUX SOCIAUX</h2>
                 <div class="row justify-content-around w-50 mt-2 p-0">
                     <a class="btn-slide" href="https://www.facebook.com/profile.php?id=61551219020904&mibextid=ZbWKwL"
                         style="text-decoration: none; color: #1c53a3"><i class="fab fa-facebook-f"></i></a>
@@ -411,7 +508,7 @@
 
                         <!-- Copyright -->
                         <p class="mb-3 mb-md-0 fs-xxs text-muted " id="copyright">
-                            © 2022 All rights reserved. <span class="font-italic font-weight-bold">GALAXIE DRIVE</span>
+                            © 2024 All rights reserved. <span class="font-italic font-weight-bold">GALAXIE DRIVE</span>
                         </p>
 
                     </div>
@@ -430,6 +527,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="assets/OwlCarroussel/wow/wow.min.js"></script>
@@ -440,22 +544,22 @@
     <script src="assets/js/main.js"></script>
     <script>
         $(document).ready(function () {
-          // Hide the spinner when the page is fully loaded
-          $('#spinner').hide();
+            // Hide the spinner when the page is fully loaded
+            $('#spinner').hide();
         });
-      </script>
-      
+    </script>
+
     <!-- Bootstrap JS and Popper.js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-    integrity="sha384-U1OMZmZqQhqLMpG8r+El98bL4C7pG1a1z6I1l6SILeEoNY5rG6Z1ZbDYzsy7kdW2"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-    
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-U1OMZmZqQhqLMpG8r+El98bL4C7pG1a1z6I1l6SILeEoNY5rG6Z1ZbDYzsy7kdW2"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

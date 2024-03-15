@@ -4,7 +4,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: #1c53a3;
+    background: darkblue;
     border-radius: 5rem;
 }
 
@@ -89,6 +89,11 @@ html::-webkit-scrollbar-thumb {
     font-size: 3em;
 }
 
+
+.text-gray-300{
+    font-size: 14px;
+}
+
 .mySlides img {
     width: 100%;
     height: 700px;
@@ -162,7 +167,7 @@ html::-webkit-scrollbar-thumb {
     margin-right: 300px;
     align-items: start;
     width: 50%;
-    background: #1c53a3;
+    background: darkblue;
 }
 
 .col2 {
@@ -189,7 +194,7 @@ html::-webkit-scrollbar-thumb {
 .btn-slide {
     width: 40px;
     height: 40px;
-    border: 2px solid #1c53a3;
+    border: 2px solid darkblue;
     border-radius: 50%;
     background-color: transparent;
     display: flex;
@@ -200,11 +205,11 @@ html::-webkit-scrollbar-thumb {
 }
 
 .btn:hover {
-    background-color: lightblue;
+    background-color: rgb(3, 3, 73);
 }
 
 .button-all {
-    background-color: #1c53a3;
+    background-color: darkblue;
     color: white;
     padding: 10px;
     border: none;
@@ -378,3 +383,5 @@ html::-webkit-scrollbar-thumb {
    
 
 }
+
+
