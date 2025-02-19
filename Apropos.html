@@ -12,17 +12,11 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
     <script src="./assets/css/bootstrap.min.js"></script>
-<<<<<<< HEAD
+    <script src="./assets/css/jquery-3.6.0.js"></script>
+    <script defer src="app.js"></script>
     <link href="assets/OwlCarroussel/owl.carousel.min.css" rel="stylesheet">
     <link href="assets/OwlCarroussel/animate/animate.min.css" rel="stylesheet">
-=======
-     <link href="assets/OwlCarroussel/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/OwlCarroussel/animate/animate.min.css" rel="stylesheet">
 
->>>>>>> ce7a5e4dbb5d2cd145b7f5109ea07ec37a119af6
-
-    <link rel="stylesheet" href="slide.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <style>
@@ -43,12 +37,6 @@
             border: 0;
         }
 
-        /* Apply a basic font family and color */
-        #toggler {
-            margin-left: 300px;
-            margin-top: -50px;
-        }
-
         /* Style the container */
         .container {
             width: 100%;
@@ -58,123 +46,7 @@
             background-color: #ffffff;
         }
 
-        /* Style the featured product section */
-        .featured-product {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 20px;
-        }
-
-        .featured-image {
-
-            height: auto;
-        }
-
-
-        .featured-title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .featured-price {
-            font-size: 18px;
-            font-weight: bold;
-            color: #1c53a3;
-            /* Bootstrap's primary color */
-        }
-
-        .featured-description {
-            padding: 10px 0;
-            font-weight: bold;
-        }
-
-        .featured-colors {
-            padding: 10px 0;
-            font-size: 1.2em;
-        }
-
-        /* Add styles for other elements as needed */
-
-        /* Réservez-maintenant button */
-        .add-to-cart-button {
-            width: 100%;
-            padding: 10px;
-            background-color: #1c53a3;
-            /* Bootstrap's primary color */
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-
-        .thumbnail {
-            width: 50px;
-            height: auto;
-            cursor: pointer;
-        }
-
-
-
-
         @media (max-width: 767px) {
-            #reservey {
-                width: 60%;
-                height: 50%;
-                background: #1c53a3;
-                color: aliceblue;
-                margin: 10px;
-                font-size: small;
-            }
-
-            #bg-video {
-                height: 10px;
-                width: 50%;
-            }
-
-            #bg-video {
-                min-height: 50vh;
-                /* Adjust as needed for smaller screens */
-            }
-
-            .main-banner .caption {
-                width: 90%;
-            }
-
-            .main-banner .caption h6 {
-                font-size: 1em;
-            }
-
-            .main-banner .caption h3 {
-                font-size: 2em;
-                margin-top: 20px;
-                margin-bottom: 15px;
-            }
-
-            .featured-product {
-                flex-direction: column;
-            }
-
-            .thumbnails {
-                display: flex;
-                flex-direction: row my-5 py-5;
-                justify-content: center;
-                margin-bottom: 10px;
-            }
-
-            .thumbnail {
-                margin-right: 10px;
-
-            }
-
-            .featured-image {
-                width: 100%;
-            }
-
-            .featured-details {
-                width: 100%;
-            }
-
             .col-6 {
                 text-align: center;
             }
@@ -182,13 +54,6 @@
             #h2 {
                 font-size: 25px;
             }
-
-            /* #btnresv {
-
-                width: 200px;
-                height: 60px;
-                margin-left: -65px;
-            } */
 
             /* copyright */
             #copyright {
@@ -204,19 +69,6 @@
         p {
             font-size: 1.2em;
         }
-<<<<<<< HEAD
-=======
-        /* Responsive styles for smaller screens (mobile) */
-@media (max-width: 767px) {
-    .testimonial-item {
-        display: block;
-        width: 100%;
-    }
-}
-
-    </style>
-</head>
->>>>>>> ce7a5e4dbb5d2cd145b7f5109ea07ec37a119af6
 
 
 
@@ -227,26 +79,13 @@
                 width: 100%;
             }
         }
-        @media (max-width: 767px) {
-        #divNav {
-          display: block;
-        }
-      }
-  
-      #divNav {
-        display: block;
-      }
-  
-      @media (min-width: 768px) {
-        #divNav {
-          display: none;
-        }
-      }
+
+
     </style>
-  
-  </head>
-  
-  <body>
+
+</head>
+
+<body>
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -255,13 +94,12 @@
         </div>
     </div>
     <!-- Spinner End -->
-<<<<<<< HEAD
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0 ">
-        <a class="navbar-brand col-auto" href="" style="font-size: 1.7em">
-          <!-- Logo -->
-          <img src="./assets/images/logo.png" alt="" class="px-2 w-50">
-          <!-- Logo -->
-        </a>
+        <a class="navbar-brand col-6" href="" style="font-size: 1.7em">
+            <!-- Logo -->
+            <img src="./assets/images/logo.png" alt="" class="px-2 " style="width: 250px;">
+            <!-- Logo -->
+          </a>
         <button type="button" class="navbar-toggler mr-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -270,50 +108,28 @@
                 <a href="index.html" class="nav-item nav-link">Accueil</a>
                 <a href="NosVhicules.html" class="nav-item nav-link">Nos Véhicules</a>
                 <a href="Apropos.html" class="nav-item nav-link active">A Propos</a>
-=======
-<nav class="navbar navbar-expand-md bg-light navbar-light  header-area header-sticky">
-        <div class="container-fluid">
-            <a class="navbar-brand " href="" style="font-size:1.7em ">
-                <!-- Logo -->
-                <img src="./assets/images/logo.png" alt="" class="px-5 w-50">
-                <!-- Logo -->
-            </a>
-            <button type="button" class="navbar-toggler justify-content-end" data-toggle="collapse"
-                data-target="#thetarget" id="toggler">
-                <span class="navbar-toggler-icon "></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end p-3" id="thetarget">
-                <ul class="navbar-nav ">
-                    <li class="nav-item mx-3 p-2"><a class="nav-link hoverBlue " href="index.html">Accueil</a></li>
-                    <li class="nav-item mx-3 p-2"><a class="nav-link hoverBlue" href="NosVhicules.html">Nos
-                            Véhicules</a></li>
-                    <li class="nav-item mx-3 p-2"><a class="nav-link hoverBlue  active" href="Apropos.html">A Propos</a></li>
-                    <li class="nav-item mx-3 HoverBtnBlue p-2"><a class="nav-link hoverBlue  "
-                            href="Contact.html">Réservation</a>
-                    </li>
-                </ul>
->>>>>>> ce7a5e4dbb5d2cd145b7f5109ea07ec37a119af6
+                <a href="Contact.html" class="btn btn-primary py-4 px-lg-5  d-lg-block">Résérvation &nbsp;<i
+                    class="fa fa-arrow-right ms-3"></i></a>
             </div>
-            <a href="Contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Résérvation &nbsp;<i class="fa fa-arrow-right ms-3"></i></a>
+            
         </div>
-      </nav>
+    </nav>
     <main>
         <div class="container">
             <div class="row my-5 py-5">
                 <div class="col-md-6 py-5">
                     <h3>A Propos De Nous</h3>
                     <br>
-                    <p>Praesent nunc nunc, egestas eget elementum sed; rutrum eget metus! Vestibulum congue congue dui
-                        ut
-                        porta. Aenean laoreet viverra turpis, a commodo purus eleifend a. Nam lacus dui; egestas ut
-                        aliquam
-                        nec, eleifend sit amet est. Nam justo elit, dictum id tempus a, ultricies tempus lacus.</p>
-                    <p>&nbsp;</p>
-                    <p>Nunc purus nibh; eleifend eget facilisis ac, sagittis non tortor. Vivamus eu enim a orci accumsan
-                        tincidunt ut ut elit. Vestibulum nisi orci, rutrum ac auctor non, viverra et magna? Sed vehicula
-                        sem
-                        et arcu tincidunt accumsan. In non pellentesque ipsum. Curabitur facilisis pellentesque
-                        pharetra.
+                    <p>
+                        Chez Galaxie Drive, nous vous offrons bien plus qu'une simple location de voiture : nous sommes
+                        votre partenaire d'aventure sur la route. Avec une flotte diversifiée de véhicules adaptés à
+                        tous les types de voyages, nous vous offrons la liberté de découvrir le monde à votre rythme.
+                        Notre équipe dévouée est là pour vous accompagner à chaque étape de votre voyage, de la
+                        réservation initiale à la restitution du véhicule. Nous nous engageons à rendre chaque trajet
+                        aussi mémorable que possible, avec un service clientèle attentif et une assistance routière
+                        disponible 24h/24, 7j/7. Bienvenue dans l'univers de Galaxie Drive, où chaque kilomètre est une
+                        promesse d'aventure.
+
                     </p>
                 </div>
                 <div class="col-md-6 my-5">
@@ -331,16 +147,16 @@
                     <div class="col-md-7 py-5">
                         <h3>Notre Parcours En Location De Voiture</h3>
                         <br>
-                        <p>Pellentesque vitae tortor id neque fermentum pretium. Maecenas ac lacus ut neque
-                            rhoncus laoreet sed id tellus. Donec justo tellus, tincidunt vitae pellentesque
-                            nec,
+                        <p>Depuis nos débuts modestes, nous avons évolué pour devenir un acteur majeur de l'industrie de
+                            la location de voitures. Notre parcours est marqué par notre engagement envers la
+                            satisfaction client et notre volonté constante d'offrir des solutions de mobilité
+                            innovantes.
                         </p>
                         <p>&nbsp;</p>
-                        <p>Nam justo elit, dictum id tempus a, ultricies tempus lacus. Nunc purus nibh;
-                            eleifend
-                            eget facilisis ac, sagittis non tortor. Vivamus eu enim a orci accumsan
-                            tincidunt ut
-                            ut elit.
+                        <p>Aujourd'hui, forts de cette expérience, nous sommes impatients de continuer à vous
+                            accompagner dans vos voyages.
+
+
                         </p>
                     </div>
                 </div>
@@ -397,9 +213,8 @@
                         <h5 class="mb-0">Karima Alami</h5>
                         <br>
                         <div class="testimonial-text bg-light text-center p-4">
-                            <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam
-                                et
-                                eos. Clita erat ipsum et lorem et sit.</p>
+                            <p class="mb-0">Super expérience avec cette agence ! Réservation facile, personnel
+                                accueillant, voiture en excellent état. Recommande vivement !</p>
                         </div>
                     </div>
 
@@ -410,9 +225,8 @@
                         <h5 class="mb-0">Ahmed Sebai</h5>
                         <br>
                         <div class="testimonial-text bg-light text-center p-4">
-                            <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam
-                                et
-                                eos. Clita erat ipsum et lorem et sit.</p>
+                            <p class="mb-0">Professionnalisme impressionnant ! Voiture propre, prête à l'heure,
+                                personnel serviable. Certainement recommandé.</p>
                         </div>
                     </div>
 
@@ -423,9 +237,8 @@
                         <h5 class="mb-0">Hamza Belhaj</h5>
                         <br>
                         <div class="testimonial-text bg-light text-center p-4">
-                            <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam
-                                et
-                                eos. Clita erat ipsum et lorem et sit.</p>
+                            <p class="mb-0">Agence rassurante pour un voyage solo. Voiture fiable, personnel amical,
+                                conseils utiles sur les routes. Confiance totale.</p>
                         </div>
                     </div>
 
@@ -436,9 +249,8 @@
                         <h5 class="mb-0">Laila El Kassimi</h5>
                         <br>
                         <div class="testimonial-text bg-light text-center p-4">
-                            <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam
-                                et
-                                eos. Clita erat ipsum et lorem et sit.</p>
+                            <p class="mb-0">Expérience moyenne. Réservation simple, mais un retard mineur de 15 min lors
+                                de la livraison. Service client réactif.</p>
                         </div>
                     </div>
                 </div>
@@ -447,65 +259,6 @@
         <!-- Testimonial End -->
 
     </main>
-    <!-- Testimonial Start -->
-<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-    <div class="container">
-        <div class="text-center">
-            <h1 class="mb-5">Nos Clients Disent</h1>
-        </div>
-        <div class="owl-carousel testimonial-carousel position-relative">
-            <!-- Testimonial Item 1 -->
-            <div class="testimonial-item text-center">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="assets/images/testimonial-1.jpg"
-                    style="width: 80px; height: 80px;">
-                <h5 class="mb-0">Karima Alami</h5>
-                <br>
-                <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
-                        eos. Clita erat ipsum et lorem et sit.</p>
-                </div>
-            </div>
-
-            <!-- Testimonial Item 2 -->
-            <div class="testimonial-item text-center">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="assets/images/testimonial-2.jpg"
-                    style="width: 80px; height: 80px;">
-                <h5 class="mb-0">Ahmed Sebai</h5>
-                <br>
-                <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
-                        eos. Clita erat ipsum et lorem et sit.</p>
-                </div>
-            </div>
-
-            <!-- Testimonial Item 3 -->
-            <div class="testimonial-item text-center">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="assets/images/testimonial-3.jpg"
-                    style="width: 80px; height: 80px;">
-                <h5 class="mb-0">Hamza Belhaj</h5>
-                <br>
-                <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
-                        eos. Clita erat ipsum et lorem et sit.</p>
-                </div>
-            </div>
-
-            <!-- Testimonial Item 4 -->
-            <div class="testimonial-item text-center">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="assets/images/testimonial-4.jpg"
-                    style="width: 80px; height: 80px;">
-                <h5 class="mb-0">Laila El Kassimi</h5>
-                <br>
-                <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
-                        eos. Clita erat ipsum et lorem et sit.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Testimonial End -->
-
     <!-- Footer -->
     <div class="conntainer-fluid bg-light py-3">
         <center>
@@ -635,9 +388,9 @@
 
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/OwlCarroussel/wow/wow.min.js"></script>
     <script src="assets/OwlCarroussel/easing/easing.min.js"></script>
     <script src="assets/OwlCarroussel/owl.carousel.min.js"></script>

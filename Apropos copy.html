@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+    <title>Galaxie Drive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <script src="./assets/css/bootstrap.min.js"></script>
+    <script src="./assets/css/jquery-3.6.0.js"></script>
+    <script defer src="app.js"></script>
+    <link href="assets/OwlCarroussel/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/OwlCarroussel/animate/animate.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="slide.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .text-gray-300 {
+            font-size: 14px;
+        }
+
+        /* Reset some default brow my-5 py-5ser styles */
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        img,
+        button {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        /* Style the container */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        @media (max-width: 767px) {
+            .col-6 {
+                text-align: center;
+            }
+
+            #h2 {
+                font-size: 25px;
+            }
+
+            /* copyright */
+            #copyright {
+                text-align: center;
+            }
+
+            .footerh2 {
+                font-size: 25px;
+                padding: 5px;
+            }
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+
+
+        /* Responsive styles for smaller screens (mobile) */
+        @media (max-width: 767px) {
+            .testimonial-item {
+                display: block;
+                width: 100%;
+            }
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only"></span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0 ">
+        <a class="navbar-brand col-auto" href="" style="font-size: 1.7em">
+            <!-- Logo -->
+            <img src="./assets/images/logo.png" alt="" class="px-2 w-50">
+            <!-- Logo -->
+        </a>
+        <button type="button" class="navbar-toggler mr-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Accueil</a>
+                <a href="NosVhicules.html" class="nav-item nav-link">Nos Véhicules</a>
+                <a href="Apropos.html" class="nav-item nav-link active">A Propos</a>
+            </div>
+            <a href="Contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Résérvation &nbsp;<i
+                    class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    
+    <!-- Footer -->
+    <div style="height: 200vh;"></div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/OwlCarroussel/wow/wow.min.js"></script>
+    <script src="assets/OwlCarroussel/easing/easing.min.js"></script>
+    <script src="assets/OwlCarroussel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="scriptLieux.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Hide the spinner when the page is fully loaded
+            $('#spinner').hide();
+        });
+    </script>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-U1OMZmZqQhqLMpG8r+El98bL4C7pG1a1z6I1l6SILeEoNY5rG6Z1ZbDYzsy7kdW2"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
